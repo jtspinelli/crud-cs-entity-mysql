@@ -19,7 +19,7 @@
 
         public static string AskForName(string message)
         {
-            string nome;
+            string? nome;
 
             do
             {
