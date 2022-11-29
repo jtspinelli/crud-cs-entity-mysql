@@ -10,7 +10,7 @@ namespace CRUDFuncionarios
         private const int Editar = 4;
         private const int Excluir = 5;
         private const int Sair = 0;
-        private static int chosenOption;
+        private static int _chosenOption;
 
         private static StringBuilder GetOpcoes()
         {
@@ -35,7 +35,7 @@ namespace CRUDFuncionarios
 
         private static bool UsuarioNaoSair()
         {
-            return chosenOption != Sair;
+            return _chosenOption != Sair;
         }
 
 
@@ -48,9 +48,9 @@ namespace CRUDFuncionarios
             
             do
             {
-                chosenOption = UserInput.AskForOption();
+                _chosenOption = UserInput.AskForOption();
 
-                switch (chosenOption)
+                switch (_chosenOption)
                 {
                     case Listar:
                         Console.WriteLine("\n=============================");
