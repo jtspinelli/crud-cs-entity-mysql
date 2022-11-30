@@ -6,7 +6,7 @@ namespace CRUDFuncionarios
 {
     internal class FuncionarioContext : DbContext
     {
-        public DbSet<Funcionario> Funcionarios { get; set; }
+        public DbSet<Funcionario> Funcionarios { get; set; } = default!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
