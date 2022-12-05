@@ -9,10 +9,10 @@ namespace CRUDFuncionarios
         {
             return new MySqlConnectionStringBuilder
             {
-                Server = "sql10.freesqldatabase.com",
-                Database = "sql10581330",
-                UserID = "sql10581330",
-                Password = "nns8p4QXFM",
+                Server = "db4free.net",
+                Database = "testsdb",
+                UserID = "jtspinelli",
+                Password = "nns8p4QXFM"
             }.GetConnectionString(true);
         }
     }
